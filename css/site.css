@@ -1,0 +1,44 @@
+html,
+body {
+    height: 100%;
+}
+
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+}
+
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+    width: 80%;
+}
+
+.site-header {
+    padding: 10px;
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+
+}
+
+.site-footer {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    background-color: #eee;
+    width: 100%;
+    text-align: center;
+}
+
+.margin-left-5px{
+    margin-left: 5px;
+}
+
+.margin-right-5px{
+    margin-right: 5px;
+}
