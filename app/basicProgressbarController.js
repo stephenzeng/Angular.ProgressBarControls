@@ -3,7 +3,6 @@
  */
 
 angular.module('progressbarApp').controller('basicProgressbarController', function($scope, $timeout, $log){
-
     $scope.started = false;
     $scope.progressPercentage = 0;
 
@@ -31,5 +30,4 @@ angular.module('progressbarApp').controller('basicProgressbarController', functi
     $scope.pause = function(){
         $scope.started = false;
     }
-
 });

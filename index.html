@@ -11,41 +11,19 @@
 <div class="site-wrapper">
     <div class="site-wrapper-inner">
         <div class="site-header">
-            <span>
+            <strong>
                 <span class="glyphicon glyphicon-tower"></span>
                 {{appTitle}}
-            </span>
+            </strong>
         </div>
 
         <div class="container">
 
-            <!--Basic timer-->
-            <div class="row" ng-controller="basicProgressbarController">
-                <div class="row">
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60"
-                             aria-valuemin="0" aria-valuemax="100"
-                             style="width:{{progressPercentage}}%;">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <button type="button" class="btn btn-default" ng-click="start();" ng-disabled="started" title="Play">
-                        <span class="glyphicon glyphicon-play"></span>
-                    </button>
-
-                    <button type="button" class="btn btn-default" ng-click="pause();" ng-disabled="!started" title="Pause">
-                        <span class="glyphicon glyphicon-pause"></span>
-                    </button>
-
-                    <button type="button" class="btn btn-default" ng-click="reset();" title="Reset">
-                        <span class="glyphicon glyphicon-stop"></span>
-                </div>
-            </div>
+            <!--Basic progressbar-->
+            <div class="row" ng-controller="basicProgressbarController" basic-progressbar></div>
 
             <!---->
             <div class="row">
-
             </div>
         </div>
 
